@@ -1,0 +1,19 @@
+{
+  "name": "mean-loginapplication",
+  "version": "0.1.0",
+  "description": "Register and Login Roles by the user",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manojkumarg16/MEAN-LoginApplication.git"
+  },
+  "author": "manojkumar <manojganesan216@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manojkumarg16/MEAN-LoginApplication/issues"
+  },
+  "homepage": "https://github.com/manojkumarg16/MEAN-LoginApplication#readme"
+}
