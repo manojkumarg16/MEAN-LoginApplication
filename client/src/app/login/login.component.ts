@@ -27,23 +27,23 @@ export class LoginComponent implements OnInit {
     this._router.navigate(['register']);
   }
 
-//   login() {
-//     this._service.loginfn(this.user).subscribe((res) => {
-//       var res2 = JSON.parse(res._body);
-//       res2.map((res,i) =>{
-//           if(res.password == this.user.password && res.username == this.user.username){
-//             window.localStorage.setItem('authkey',this.user.username);
-//             this._router.navigate(['navone']);
-//           }
-//       })
-//       if(res2.length == 0) {
-//         window.alert("Please Enter valid Credentials");
-//         this.user = {
-//               username: '',
-//               password: ''
-//           };
-//       }
+  login() {
+    this._service.loginfn(this.user).subscribe((res) => {
+      var res2 = JSON.parse(res._body).marker;
+      res2.map((res,i) =>{
+          if(res.password == this.user.password && res.username == this.user.username){
+            window.localStorage.setItem('authkey',this.user.username);
+            this._router.navigate(['navone']);
+          }
+      })
+      if(res2.length == 0) {
+        window.alert("Please Enter valid Credentials");
+        this.user = {
+              username: '',
+              password: ''
+          };
+      }
       
-//   });
-// }
+  });
+}
 }

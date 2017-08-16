@@ -10,14 +10,14 @@ export class AuthService {
   constructor(private _http: Http) {
   }
 
-  // loginfn(user) {
-  //   var headers = new Headers();
-  //   headers.append('Content-Type', 'application/json');
-  //   let options = new RequestOptions({ headers: headers });
-  //     return this._http.get(`http://localhost:3000/getAllUser` , JSON.stringify(data) ,options)
-  //           .map(user => user)
-  //           .catch(error => Observable.throw(error));
-  //           }
+  loginfn(user) {
+    var headers = new Headers();
+    headers.append('Content-Type', 'application/json');
+    let options = new RequestOptions({ headers: headers });
+      return this._http.post(`http://localhost:3000/getUser` ,JSON.stringify(user) ,options) 
+            .map(user => user)
+            .catch(error => Observable.throw(error));
+  }
 
 
   savefn(data) {

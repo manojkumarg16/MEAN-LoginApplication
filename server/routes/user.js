@@ -15,9 +15,7 @@ router.post('/addUser', (req, res, next)=>{
 	password : req.body.password,
 	email : req.body.email,
 	phonenumber : req.body.phonenumber
-});
-
-
+	});
 	newUser.save((err,result)=>{
 		if(err){
 			res.send("error in adding user "+err)
@@ -25,6 +23,14 @@ router.post('/addUser', (req, res, next)=>{
 		else if(result){
 			res.send("Successfully aaaaadded"+ result);
 		}
+	});
+});
+
+router.post('/getUser', (req, res, next) => {
+	console.log(req.body);
+	user.find({"username":req.body.username, "password":req.body.password },(err,marker) =>{
+		res.json({marker});
+		
 	});
 });
  
