@@ -1,0 +1,14 @@
+span{
+	cursor:pointer;
+	font-size:30px;
+}
+ul li{
+	font-size: 18px;
+}
+.navbar-fixed-top{
+	background-color: slategrey;
+}
+#log{
+	cursor:pointer;
+	margin-top: 10px;
+}

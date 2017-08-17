@@ -12,6 +12,7 @@ import { UserEntryComponent } from './user-entry/user-entry.component';
 import { RegisterComponent } from './register/register.component';
 
 import { AuthGuard } from './guard/auth.guard';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { AuthGuard } from './guard/auth.guard';
     NavoneComponent,
     UserEntryComponent,
     RegisterComponent,
+    LandingPageComponent,
 
   ],
   imports: [

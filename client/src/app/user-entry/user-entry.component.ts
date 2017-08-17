@@ -8,12 +8,8 @@ import { Router } from '@angular/router';
 })
 export class UserEntryComponent implements OnInit {
 
-  constructor(private _router: Router) { }
+  constructor() { }
 
   ngOnInit() {
   }
-logout() {
-	localStorage.removeItem('authkey');
-	this._router.navigate(['login']);
-}
 }
