@@ -10,13 +10,17 @@ import { AuthGuard } from './guard/auth.guard';
 export const router: Routes= [
 	{ path: '', redirectTo: 'login', pathMatch: 'full'},
 	{ path: 'login', component: LoginComponent },
-	{ path: 'landingpage', component: LandingPageComponent , canActivate:[AuthGuard]},
-	{ path: 'register', component: RegisterComponent },
-	{ path: 'navone', component: NavoneComponent,
+	{ path: 'home', component: LandingPageComponent , canActivate:[AuthGuard],
 	children: [
-			{ path: 'userentry', component: UserEntryComponent }
-			]
-		}
+		{ path: 'navone', component: NavoneComponent,
+			children: [
+				{ path: 'userentry', component: UserEntryComponent }
+				]
+			}
+		]
+	},
+	{ path: 'register', component: RegisterComponent },
+	
 ];
 
 export const routes: ModuleWithProviders = RouterModule.forRoot(router);

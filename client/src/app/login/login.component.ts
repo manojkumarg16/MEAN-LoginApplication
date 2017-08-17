@@ -33,7 +33,7 @@ export class LoginComponent implements OnInit {
       res2.map((res,i) =>{
           if(res.password == this.user.password && res.username == this.user.username){
             window.localStorage.setItem('authkey',this.user.username);
-            this._router.navigate(['landingpage']);
+            this._router.navigate(['home']);
           }
       })
       if(res2.length == 0) {
