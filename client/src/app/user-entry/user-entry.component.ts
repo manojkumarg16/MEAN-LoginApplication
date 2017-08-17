@@ -13,6 +13,7 @@ export class UserEntryComponent implements OnInit {
   ngOnInit() {
   }
 logout() {
+	localStorage.removeItem('authkey');
 	this._router.navigate(['login']);
 }
 }
