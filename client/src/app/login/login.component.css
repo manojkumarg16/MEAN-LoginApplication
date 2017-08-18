@@ -1,12 +1,11 @@
 .container{
   width:950px;
   margin : auto ;
-  position: fixed;
 }
 .heading {
   position: fixed;
-  margin-top: 6%;
-  margin-left: 40%;
+  margin-top: 3%;
+  margin-left: 25%;
 }
 .user, .pass{
   position: fixed;
@@ -19,36 +18,58 @@
   height: 40px;
   border-style: inset;
   position: fixed;
-  margin-top: 15%;
-  margin-left: -10%;
+  margin-top: 25%;
+  margin-left: -20%;
 }
 .user label {
   position: fixed;
-  margin-top: 15%;
-  margin-left: 30%;
+  margin-top: 25%;
+  margin-left: 20%;
 }
 .pass input {
   border-radius: 5px 5px 5px 5px;
   height: 40px;
   border-style: inset;
   position: fixed;
-  margin-top: 20%;
-  margin-left: -10%;
+  margin-top: 30%;
+  margin-left: -20%;
 }
 .pass label {
   position: fixed;
-  margin-top: 20%;
-  margin-left: 30%;
+  margin-top: 30%;
+  margin-left: 20%;
 }
 #login {
   position: fixed;
-  margin-top: 26%;
-  margin-left: 44%;
+  margin-top: 35%;
+  margin-left: 37%;
   width: 8%;
 }
 #register {
   position: fixed;
-  margin-top: 30%;
-  margin-left: 40%;
+  margin-top: 40%;
+  margin-left: 32%;
   font-size: larger;
+}
+.git img {
+  height: 50px;
+  position: fixed;
+  margin-top: 10%;
+  margin-left: 26%;
+}
+.fb img{
+  height: 50px;
+  position: fixed;
+  margin-top: 10%;
+  margin-left: 33%;
+}
+.git .text {
+position:relative;
+bottom:30px;
+left:0px;
+visibility:hidden;
+}
+
+.git:hover .text {
+visibility:visible;
 }
