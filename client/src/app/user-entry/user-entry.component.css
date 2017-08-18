@@ -1,20 +1,22 @@
 .container{
+  background-color: transparent;
   width:950px;
   margin : 0 auto ;
 }
 .input{
+  position:fixed;
   margin-top: 50px;
   font-family: sans-serif;
   font-size: 20px;
+  margin-left: 158px;
 }
 label{
-  margin-left: 320px;
+  margin-left: 90px;
 }
 input{
   border-radius: 5px 5px 5px 5px;
   height:40px;
   border-style: inset;
-  float:left;
 }
 .row{
   margin-top: 10px;

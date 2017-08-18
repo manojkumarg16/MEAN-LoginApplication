@@ -27,6 +27,6 @@ openNav() {
 closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
-    document.getElementById("content").style.marginLeft = "0px";
+    document.getElementById("content").style.marginLeft = "-15px";
 }
 }

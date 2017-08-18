@@ -1,7 +1,9 @@
-body{
-	background-image: url("./assets/images/background.jpg");
-	background-attachment: fixed;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
-}
+/*body{
+    background-image: url("./assets/images/background.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}*/
+
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');

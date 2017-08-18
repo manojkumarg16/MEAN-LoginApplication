@@ -1,9 +1,13 @@
 #page-navigator {
-  margin-top: 0px;
+  margin-top: 76px;
+  position:fixed;
+  width: 100%;
+  margin-left: 2px;
 }
-
+a{
+  margin-top: 10px;
+}
 .nav > li>a {
-  height: 70px;
   color: black;
   font-size: 25px;
   font-weight: lighter;
@@ -29,4 +33,8 @@ ul{
     float: left;  
     list-style-type: none;
     text-align: center;
+}
+
+.row{
+  margin-top: 160px;
 }
