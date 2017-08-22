@@ -1,4 +1,4 @@
-  <div class="container">
+ <!--  <div class="container">
   <form #formCtrl="ngForm">
     <div class="input">
       <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6 input-field1">
@@ -31,4 +31,46 @@
       <button id="Cancel" class="btn btn-primary" (click)="cancel()" >cancel</button>
     </div>
     </form>
-    </div>
+    </div> -->
+
+
+<div class="container">
+
+<div class="col-sm-6 col-sm-offset-3">
+
+    <h1><span class="fa fa-sign-in"></span> Signup</h1>
+
+    <!-- show any messages that come back with authentication -->
+    <!-- <% if (message.length > 0) { %>
+        <div class="alert alert-danger"><%= message %></div>
+    <% } %> -->
+
+    <!-- LOGIN FORM -->
+    <form action="/signup" method="post">
+        <div class="form-group">
+            <label>UserName</label>
+            <input type="text" class="form-control" name="username" [(ngModel)]="data.username" #username="ngModel" required>
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" class="form-control" name="password" [(ngModel)]="data.password" #password="ngModel" required>
+        </div>
+        <div class="form-group">
+            <label>Email</label>
+            <input type="text" class="form-control" name="username" [(ngModel)]="data.email" #email="ngModel" required>
+        </div>
+        <div class="form-group">
+            <label>PhoneNumber</label>
+            <input type="text" class="form-control" name="phonenumber" [(ngModel)]="data.phonenumber" #phonenumber="ngModel" required>
+        </div>
+        <button type="submit" class="btn btn-warning btn-lg">Signup</button>
+    </form>
+
+    <hr>
+
+    <p>Already have an account? <a href="/login">Login</a></p>
+    <p>Or go <a href="/">home</a>.</p>
+
+</div>
+
+</div>

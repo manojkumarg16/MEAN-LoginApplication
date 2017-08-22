@@ -13,7 +13,6 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
   }
   title = 'Login Page';
-  isTrue = false;
   user = {
     username: '',
     password: ''
@@ -21,10 +20,6 @@ export class LoginComponent implements OnInit {
 
   constructor(private _service:AuthService, private _router: Router) {
 
-  }
-
-  register() {
-    this._router.navigate(['register']);
   }
 
   login() {
