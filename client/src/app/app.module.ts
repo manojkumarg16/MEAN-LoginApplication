@@ -10,7 +10,7 @@ import { NavoneComponent } from './navone/navone.component';
 import { AuthService } from './services/auth.service';
 import { UserEntryComponent } from './user-entry/user-entry.component';
 import { RegisterComponent } from './register/register.component';
-
+import { FirstPageComponent } from './firstpage/firstpage.component';
 import { AuthGuard } from './guard/auth.guard';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 
@@ -22,7 +22,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
     UserEntryComponent,
     RegisterComponent,
     LandingPageComponent,
-
+    FirstPageComponent
   ],
   imports: [
     BrowserModule,
